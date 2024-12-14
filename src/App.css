@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.calculator {
+  width: 400px;
+  background: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; /* Центрируем с использованием flex */
+}
+
+.display {
+  width: 100%;
+  height: 100px;
+  background: #222;
+  color: white;
+  text-align: right;
+  font-size: 2rem;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #444;
+  border-radius: 10px; /* Закругление краев */
+}
+
+.buttons, .scientific-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.scientific-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.btn {
+  height: 60px;
+  background: gray;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: darkgray;
+}
+
+.special {
+  background: #444;
+}
+
+.operator {
+  background: orange;
+}
+
+.equals {
+  background: orange;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.scientific {
+  background: #444;
+  height: 60px;
+  font-size: 1rem;
+}
+
